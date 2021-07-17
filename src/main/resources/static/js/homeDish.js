@@ -1,0 +1,55 @@
+$(document).ready(function(){
+    tinhtrang();
+})
+
+function tinhtrang(){
+    $("#1").click(function(){
+        $('#anh11').toggle(500);
+    });
+    $("#2").click(function(){
+        $('#anh12').toggle(500);
+    });
+    $("#3").click(function(){
+        $('#anh13').toggle(500);
+    });
+    $("#4").click(function(){
+        $('#anh14').toggle(500);
+    });
+    $("#5").click(function(){
+        $('#anh21').toggle(500);
+    });
+    $("#6").click(function(){
+        $('#anh22').toggle(500);
+    });
+    $("#7").click(function(){
+        $('#anh23').toggle(500);
+    });
+    $("#8").click(function(){
+        $('#anh24').toggle(500);
+    });
+    $("#9").click(function(){
+        $('#anh31').toggle(500);
+    });
+    $("#10").click(function(){
+        $('#anh32').toggle(500);
+    });
+    $("#11").click(function(){
+        $('#anh33').toggle(500);
+    });
+    $("#12").click(function(){
+        $('#anh34').toggle(500);
+    });
+    $("#13").click(function(){
+        $('#anh41').toggle(500);
+    });
+    $("#14").click(function(){
+        $('#anh42').toggle(500);
+    });
+    $("#15").click(function(){
+        $('#anh43').toggle(500);
+    });
+    $("#16").click(function(){
+        $('#anh44').toggle(500);
+    });
+
+}

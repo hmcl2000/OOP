@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit ingredient</title>
+</head>
+<body>
+<h3>Ingredient Information</h3>
+<p>
+  <a th:href="@{/home/ingredient}">Back to ingredient list</a>
+</p>
+<div id="form">
+  <form action="#" th:action="@{/home/ingredient/update}" th:object="${ingredient}" method="post">
+    <fieldset>
+      <legend>Ingredient Information</legend>
+      <tr>
+        <div>
+          <td></td>
+          <label>ID</label></td>
+          <td><input type="text" th:field="*{id}" readonly></td>
+        </div>
+      </tr>
+      <tr>
+        <div>
+          <td><label>Name</label></td>
+          <td><input type="text" th:field="*{name}" readonly></td>
+        </div>
+      </tr>
+      <tr>
+        <div>
+          <td><label>Amount</label></td>
+          <td><input type="text" th:field="*{amount}"></td>
+        </div>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Edit"></td>
+      </tr>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link th:href="@{/css/homeDish.css}" rel="stylesheet" />
+  <script  src="/js/jquery.js" type ="text/javascript"></script>
+  <script  src="/js/homeDish.js" type ="text/javascript"></script>
+</head>
+<body>
+<div id="top">
+  <div id ="logo">
+    <img src="/pictures2/logo2.png" style="width: 220px ;height: 100px">
+  </div>
+  <div id ="top2">
+    <div id ="menu">
+      <ul>
+        <li><a th:href="@{/home}" title="HOME"><strong>HOME</strong></a></li>
+        <li><a th:href="@{/home/main-ingredient}" title="INTRODUCE"><strong>NGUYÊN LIỆU</strong></a></li>
+        <li><a th:href="@{/home/checklist}" title="ABOUT"><strong>BẢNG KIỂM</strong></a></li>
+        <li><a href="#" title="MENU"><strong>MENU</strong></a></li>
+        <li><a href="#" title="ENETS"><strong>TRỢ GIÚP</strong></a></li>
+        <li><a href="#" title="CONTACTS"><strong>LIÊN HỆ</strong></a></li>
+        <li><a th:href="@{/}" title="dangxuat"><strong>ĐĂNG XUẤT</strong></a></li>
+
+
+      </ul>
+    </div>
+    <div id = "abc">
+      <div id ="tk">
+        <div id ="timkiem">
+          <div class="box">
+            <input type="text" placeholder="Search here">
+            <a><i class="fas fa-search-location"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div id="main1"><strong> DANH MUC MÓN</strong>
+    <ul>
+      <li><a href="#" title="GA"><strong>GÀ</strong></a></li>
+      <li><a href="#" title="MÌ"><strong>MÌ</strong></a></li>
+      <li><a href="#" title="KIMCHI"><strong>KIMCHI</strong></a></li>
+      <li><a href="#" title="TOKKOKI"><strong>TOKKOKI</strong></a></li>
+      <li><a href="#" title="PIZZA"><strong>PIZZA</strong></a></li>
+      <li><a href="#" title="NUOC"><strong>NƯỚC</strong></a></li>
+      <li><a href="#" title="COMBO"><strong>COMBO</strong></a></li>
+    </ul>
+  </div>
+  <div id="main2">
+    <div id="mon1">
+      <li><strong>MÓN HOT</strong></li>
+      <div id="mon" >
+        <ul>
+          <div id="a"  class="cbd">
+            <li> <h1 class="text"> Cơm trộn truyền thống</h1>
+              <img src="/pictures2/3.jpg" style="height: 120px;width: 240px;">
+            </li>
+          </div>
+          <div id="b" class="cbd">
+            <li><h1 class="text">Tokbokki truyền thống</h1>
+              <img src="/pictures2/4.jpg"style="height: 120px;width: 240px;">
+
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div id="mon12" >
+        <ul> <div id="c" class="cbd">
+          <li><h1 class="text">Gà rán</h1>
+            <img src="/pictures2/19.jpg" style="height: 120px;width: 240px;" >
+          </li>
+        </div>
+
+          <div id="d" class="cbd">
+            <li><h1 class="text">mì đen truyền thống</h1>
+              <img src="/pictures2/18.jpg" style="height: 120px;width: 240px;">
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div id="mon2">
+      <li><strong>MÓN MỚI</strong></li>
+      <ul><div class="cbd">
+        <li><h1 class="text">gà cay</h1>
+          <img src="/pictures2/16.jpg" style="height: 120px;width: 150px;">
+        </li>
+      </div>
+        <div class="cbd">
+          <li><h1 class="text">mì truyền thống </h1>
+            <img src="/pictures2/12.jpg"style="height: 120px;width: 150px;">
+          </li>
+        </div>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<div id="dsmenu">
+  <div id="dsmenu1"><strong>DANH SÁCH MÓN</strong></div>
+  <div id="a1">
+    <div id="a11">
+      <div  class="hinh">
+        <li>
+          <div id="1" class="bthClick"> THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh11" class="anh" src="/pictures2/2.jpg" style="height: 100px;width: 100px;">
+          <h2>Kimpap truyền thống</h2>
+        </li>
+      </div>
+
+
+      <div  class="hinh">
+        <li>
+          <div id="2" class="bthClick">THAY ĐÔI TÌNH TRẠNG</div>
+          <img id="anh12" class="anh" src="/pictures2/15.jpg" style="height: 100px;width: 100px;">
+          <h2>Kimpap cuộn trứng</h2>
+        </li>
+      </div>
+
+      <div  class="hinh">
+        <li>
+          <div id="3" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh13" class="anh" src="/pictures2/13.jpg" style="height: 100px;width: 100px;">
+          <h2>Chả cá Hàn Quốc</h2>
+        </li>
+      </div>
+
+      <div class="hinh">
+        <li>
+          <div id="4" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh14" class="anh" src="/pictures2/3.jpg" style="height: 100px;width: 100px;">
+          <h2>Cơm trộn</h2>
+        </li>
+      </div>
+    </div>
+    <div id="a12">
+
+      <div  class="hinh">
+        <li>
+          <div id="5" class="bthClick"> THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh21" class="anh" src="/pictures2/4.jpg" style="height: 100px;width: 100px;">
+          <h2>TOKKOKI cay</h2>
+        </li>
+      </div>
+
+
+      <div  class="hinh">
+        <li>
+          <div id="6" class="bthClick">THAY ĐÔI TÌNH TRẠNG</div>
+          <img id="anh22" class="anh" src="/pictures2/5.jpg" style="height: 100px;width: 100px;">
+          <h2>Kim chi truyền thống</h2>
+        </li>
+      </div>
+
+      <div  class="hinh">
+        <li>
+          <div id="7" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh23" class="anh" src="/pictures2/6.jpg" style="height: 100px;width: 100px;">
+          <h2>Mì trộn </h2>
+        </li>
+      </div>
+
+      <div  class="hinh">
+        <li>
+          <div id="8" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh24" class="anh" src="/pictures2/7.jpg" style="height: 100px;width: 100px;">
+          <h2>Thịt bò xào nấm</h2>
+        </li>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="b1">
+    <div id="b11">
+
+      <div  class="hinh">
+        <li>
+          <div id="9" class="bthClick"> THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh31" class="anh" src="/pictures2/11.jpg" style="height: 100px;width: 100px;">
+          <h2>Mì lạnh</h2>
+        </li>
+      </div>
+
+
+      <div  class="hinh">
+        <li>
+          <div id="10" class="bthClick">THAY ĐÔI TÌNH TRẠNG</div>
+          <img id="anh32" class="anh" src="/pictures2/12.jpg" style="height: 100px;width: 100px;">
+          <h2>Canh thịt bò hầm</h2>
+        </li>
+      </div>
+
+      <div class="hinh">
+        <li>
+          <div id="11" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh33" class="anh" src="/pictures2/14.jpg" style="height: 100px;width: 100px;">
+          <h2>Canh kim chi đậu huc non</h2>
+        </li>
+      </div>
+
+      <div  class="hinh">
+        <li>
+          <div id="12" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh34" class="anh" src="/pictures2/16.jpg" style="height: 100px;width: 100px;">
+          <h2>Gà sốt cay Hàn Quốc</h2>
+        </li>
+      </div>
+    </div>
+
+
+    <div id="b12">
+
+      <div class="hinh">
+        <li>
+          <div id="13" class="bthClick"> THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh41" class="anh" src="/pictures2/17.jpg" style="height: 100px;width: 100px;">
+          <h2>Trứng hấp niêu</h2>
+        </li>
+      </div>
+
+
+      <div  class="hinh">
+        <li>
+          <div id="14" class="bthClick">THAY ĐÔI TÌNH TRẠNG</div>
+          <img id="anh42" class="anh" src="/pictures2/18.jpg" style="height: 100px;width: 100px;">
+          <h2>Mì đen</h2>
+        </li>
+      </div>
+
+      <div  class="hinh">
+        <li>
+          <div id="15" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh43" class="anh" src="/pictures2/19.jpg" style="height: 100px;width: 100px;">
+          <h2>Gà rán</h2>
+        </li>
+      </div>
+
+      <div  class="hinh">
+        <li>
+          <div id="16" class="bthClick">THAY ĐỔI TÌNH TRẠNG</div>
+          <img id="anh44" class="anh" src="/pictures2/9.jpeg" style="height: 100px;width: 100px;">
+          <h2>COMBO hàn quốc</h2>
+        </li>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div id="footer">
+  <div id ="ft1">
+    <ul>
+      <h2>*Giới thiệu</h2>
+      <a>. Hệ thông cửa hàng</a>
+      <a>. Khuyến mại</a>
+      <a>. Tuyển dụng</a>
+      <a>. liên hệ</a>
+    </ul>
+  </div>
+  <div id ="ft2">
+    <img src="/pictures2/face.png" style="width: 20px; height: 20px">
+    <img src="/pictures2/ims.png" style="width: 20px; height: 20px">
+    <img src="/pictures2/tw.jpg" style="width: 20px; height: 20px">
+    <img src="/pictures2/za.webp" style="width: 20px; height: 20px">
+    <img src="/pictures2/you.png" style="width: 20px; height: 20px">
+    <img src="/pictures2/gg.png" style="width: 20px; height: 20px">
+    <img src="/pictures2/ggm.png" style="width: 20px; height: 20px">
+  </div>
+</div>
+
+</body>
+</html>
